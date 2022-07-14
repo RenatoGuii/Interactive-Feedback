@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --texto_principal: 'Overpass', sans-serif;
+
+    --corfundoprincipal: hsl(216, 12%, 8%);
+    --corfundocaixa: hsl(218, 19%, 16%);
+    --corfundobotões: hsla(211, 23%, 22%, 0.96);
+    --cortexto: hsl(217, 12%, 63%);
+    --laranja: hsl(25, 97%, 53%);
+}
+
+body {
+    background-color: var(--corfundoprincipal);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    font-family: var(--texto_principal);
+    background-color: var(--corfundocaixa);
+    margin: auto;
+    padding: 25px;
+    width: 290px;
+    border-radius: 23px;
+}
+.estrela_img{
+    height: 13px;
+}
+div#estrela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corfundobotões);
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    padding: 25px 0px 10px 0px;
+}
+p {
+    color: var(--cortexto);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.div_botoes_feedback{
+    padding: 23px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    text-align: center;
+}
+
+
+input#radio-1 + label::before {
+    content: '1';
+}
+input#radio-2 + label::before {
+    content: '2';
+}
+input#radio-3 + label::before {
+    content: '3';
+}
+input#radio-4 + label::before {
+    content: '4';
+}
+input#radio-5 + label::before {
+    content: '5';
+}
+
+
+.div_botoes_feedback input {
+    display: none;
+}
+.div_botoes_feedback input + label::before {
+    display: inline-block;
+    background-color: var(--corfundobotões);
+    color: var(--cortexto);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_botoes_feedback input:hover + label::before {
+    background-color: var(--cortexto);
+    color: white;
+    cursor: pointer;
+}
+.div_botoes_feedback input:checked + label:before {
+    color: white;
+    background-color: var(--laranja);
+}
+input#botao_submit {
+    background-color: var(--laranja);
+    border: none;
+    color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    font-family: var(--texto_principal);
+    letter-spacing: 2px;
+}
+input#botao_submit:hover {
+    background-color: white;
+    color: var(--laranja);
+    cursor: pointer;
+}
+
