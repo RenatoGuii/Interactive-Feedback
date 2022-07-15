@@ -123,8 +123,33 @@ input#botao_submit:hover {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     body {
         height: 100%;
     }
+}
+
+
+/*Segunda Parte*/
+
+
+div#container2 {
+    display: none;
+    text-align: center;
+    padding: 30px;
+}
+div#container2 img {
+    display: block;
+    margin: auto;
+}
+div#container2 div {
+    background-color: var(--corfundobotões);
+    color: var(--laranja);
+    font-size: 13px;
+    height: 25px;
+    border-radius: 10px;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 20px;
+    width: 175px;
 }
