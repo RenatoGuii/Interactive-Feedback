@@ -123,3 +123,8 @@ input#botao_submit:hover {
     cursor: pointer;
 }
 
+@media (max-width: 600px) {
+    body {
+        height: 100%;
+    }
+}
