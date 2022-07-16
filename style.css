@@ -123,9 +123,6 @@ input#botao_submit:hover {
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
-    height: 100%;
-}
 
 /*Segunda Parte*/
 
